@@ -105,7 +105,31 @@ Loads RTGDQ, the Academizer, the Essay Hall of Shame, the Application Sequence, 
 /asher-grad-essays ch09
 ```
 
-### Review your essay draft
+### Review your actual essay file
+
+Pass your essay as an argument and get a full structured critique:
+
+```
+/asher-grad-essays check-my-essay my-statement.pdf
+/asher-grad-essays check-my-essay statement-of-purpose.docx
+/asher-grad-essays check-my-essay draft.txt
+```
+
+The skill extracts the text, asks you for the prompt if it is not in the file, then produces a 9-section report:
+
+1. RTGDQ — does it answer the question?
+2. Opening type classification (epiphany, self-definition, generic, etc.)
+3. Essay Hall of Shame audit — 12 items, PASS or FLAG with a suggested fix
+4. Academizer assessment — 2-3 casual phrases rewritten to graduate register
+5. Personal + academic balance
+6. School-specific research demonstration (Strong / Partial / Missing)
+7. Vague adjective audit
+8. Three highest-priority fixes with concrete rewrites
+9. One thing working well
+
+Supported formats: pdf, docx, doc, txt, md, rtf.
+
+### Review your essay draft (inline)
 
 Paste your draft and ask:
 
